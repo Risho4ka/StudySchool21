@@ -7,5 +7,5 @@ void ft_print_alphabet(void) {
 		write(1, &symbol, 1);
 	}
 
-	write(1,'\n', 1);
+	write(1,"\n", 1);
 } 
