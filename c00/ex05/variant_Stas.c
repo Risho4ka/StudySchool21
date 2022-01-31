@@ -12,16 +12,18 @@ int main( void ) {
 
 void ft_print_comb_Stas( int n ) {
 
-
-	/*int out[n];
+	/* int out[n];
 	int max = 10;
+	int num = 0;
 
 	if( n == 0 )
 		return;
 		
+	while( num < max ) {
 
-	for( int i=2; i<=n; i++)
-		max *= 10; 
+
+	}
+
 
 	printf("%d",max);*/
 	
