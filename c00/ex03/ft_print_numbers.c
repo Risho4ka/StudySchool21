@@ -10,5 +10,4 @@ void ft_print_numbers(void) {
 		nums++;
 	}
 
-	write(1,"\n", 1);
 } 
