@@ -10,5 +10,4 @@ void ft_is_negative(int n) {
 
 		write(1, "N", 1);
 
-	write(1,"\n", 1);
 }
