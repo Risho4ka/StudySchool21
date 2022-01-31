@@ -22,8 +22,8 @@ void ft_print_comb(void) {
                 write(1, &nums2, 1);
                 write(1, &nums3, 1);
 
-                    if (!((nums1 == '7') && (nums2 == '8') && (nums3 == '9')))
-                        write(1, ",", 1);
+                    if (!( nums1 == '7' && nums2 == '8' && nums3 == '9' ))
+                        write(1, ", ", 2);
 
                 nums3++;
             }
