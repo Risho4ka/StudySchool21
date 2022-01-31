@@ -10,5 +10,4 @@ void ft_print_reverse_alphabet(void) {
 		symbol--;
 	}
 
-	write(1,"\n", 1);
 } 
