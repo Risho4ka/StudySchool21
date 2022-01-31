@@ -14,13 +14,12 @@ void ft_print_comb2(void) {
             while ( j <100) {
 
                 write(1, &nums[ (int)i/10 ], 1);
-                write(1, &nums[i%10], 1);
-                write(1, " ",  1);
+                write(1, &nums[ i%10 ], 1);
+                write(1, " ", 1);
                 write(1, &nums[ (int)j/10 ], 1);
-                write(1, &nums[j%10], 1);
+                write(1, &nums[ j%10 ], 1);
 
-                    if( !(i == 98 && j == 99) ) 
-                
+                if( !(i == 98 && j == 99) ) 
                     write(1, ", ", 2);
 
                 j++;
