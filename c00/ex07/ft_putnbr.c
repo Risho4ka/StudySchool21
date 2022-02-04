@@ -9,11 +9,19 @@ void ft_putnbr(int nb) {
 
 	if( nb < 0 ) {
 		write( 1, "-", 1 );
-		whole = -nb;
+		nb = -nb;
 	} 
-	else {
-		whole = nb;
-	} 
+
+	if ( nb == -2147483648 ) {
+		write( 1, "2", 1 );
+		nb = 147483648;
+	}
+
+	if ( nb == 0 ) {
+		write( 1, "0", 1 );
+	}
+
+	whole = nb;
 
 	i = 0;
 
