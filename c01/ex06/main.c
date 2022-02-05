@@ -4,9 +4,7 @@
 int main(void) {
 
 	char str [] = "Hello" ;
-	int i;
-
-	i = ft_strlen(str); 
+	int i = ft_strlen(str); 
 
 	printf("%d\n", i);
 
