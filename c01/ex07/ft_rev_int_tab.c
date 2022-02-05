@@ -3,11 +3,14 @@
 
 void ft_rev_int_tab(int *tab, int size) {
 
-	int a;
+	int tmp;
+	int i = 0;
 
-	while( --size >= 0 ) {
+	while( --size >= i ) {
 
-		a = *(tab + size);
-		ft_putnbr(a);
+		tmp = *(tab + size);
+		*(tab + size) = *(tab + i);
+		*(tab + i) = tmp;
+		i++;
 	}
 }
