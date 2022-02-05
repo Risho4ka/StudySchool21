@@ -1,15 +1,11 @@
 #include <unistd.h> 
 
-void	ft_strlen(char *str) {
+int ft_strlen(char *str) {
 
-    int i = 0;
-    char c;
+	int i = 0;
 
-    while ( *(str + i) != '\0') {
-    
-        i++;
-    }
+	while ( *(str + i) != '\0')
 
-    c = (char)(i + 48);
-    write( 1, &c, 1);
-}	
+		i++;
+	return(i);
+}
