@@ -3,7 +3,7 @@
 
 int main(void) {
 
-	char s1 [] = "Hello";
+	char s1 [] = "HelloЦ";
 	char s2 [] = "Hello";
 	int ans;
 
