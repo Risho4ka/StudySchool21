@@ -1,17 +1,22 @@
+/*
+	логика работы:
+	- копируем символы из src в dest паралельно считая длину src
+	- если мы закончили копировать символы, а scr еще не закончилась, то досчитаем длину
+*/
 unsigned int ft_strlcpy(char *dest, char *src, unsigned int size) {
 
-	int i = 0;
+	int len = 0;
 
-	while ( src[i] && i < size - 1 ) {
+	// копирование символов из src в dest
+	while ( src[len] && len < size - 1 ) {
 		
-		dest[i] = src[i];
-		i++;
+		dest[len] = src[len];
+		len++;
 	}
-
-	int j=0;
 	
-	while ( src[j] ) 
-		j++;
+	// если символы в src еще есть, то досчитаем длину строки src
+	while ( src[len] ) 
+		len++;
 
-	return (j);
+	return (len);
 }
