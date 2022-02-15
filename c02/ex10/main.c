@@ -10,7 +10,7 @@ int main(void) {
 
 	printf("%s\n", src); 
 
-	j = ft_strlcpy(dest, src, 3);
+	j = ft_strlcpy(dest, src, 2);
 
 	printf("%d\n", j);
 
