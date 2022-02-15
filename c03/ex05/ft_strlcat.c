@@ -1,4 +1,9 @@
 /*
+функция strlcat:
+- объединить dest и src
+- у dest заданна длина массива для возможного копирования
+- вывести суммарное количество символов dest и src
+
 логика работы:
 - считаем длину src
 - считаем длину dest
@@ -8,7 +13,6 @@
 - выводим суммарную длину src и dest  
 */
 
-#include<stdio.h>
 unsigned int ft_strlcat(char *dest, char *src, unsigned int size) {
 
 	int len_src = 0;
